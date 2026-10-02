@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ateci-copiadoras-ricoh.a01771796.workers.dev/sitemap.xml
