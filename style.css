@@ -117,7 +117,7 @@ section { padding-block: clamp(3rem, 7vw, 6rem); }
 .index h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); font-weight: 600; }
 
 /* Proceso */
-.process { background: var(--color-heading); color: #dbe8eb; }
+.process { background: var(--color-heading); color: #fff; }
 .process h2, .process h3 { color: #fff; }
 .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 2.5rem; }
 .steps li { border-top: 2px solid var(--color-accent-deco); padding-top: 1.25rem; }
