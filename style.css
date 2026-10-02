@@ -91,10 +91,14 @@ ol, ul, dl, dd { margin: 0; padding: 0; list-style: none; }
 .s-line { fill: #c3d3d7; }
 .s-stamp { fill: none; stroke: var(--color-accent); stroke-width: 2; }
 
-/* Jugada firma: la hoja sale impresa por la ranura (una sola vez) */
+/* Jugada firma: la hoja sale impresa por la ranura (se repite cada 15 s) */
 @media (prefers-reduced-motion: no-preference) {
-  .sheet { animation: sale 2.4s var(--ease-out) .35s both; }
-  @keyframes sale { from { transform: translateY(-198px); } to { transform: none; } }
+  .sheet { animation: sale 15s infinite .35s both; }
+  @keyframes sale {
+    0% { transform: translateY(-198px); animation-timing-function: var(--ease-out); }
+    16%, 92% { transform: none; animation-timing-function: ease-in; }
+    100% { transform: translateY(-198px); }
+  }
 }
 
 /* Banda */
